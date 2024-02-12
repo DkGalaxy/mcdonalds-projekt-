@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+
 header {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
 }
@@ -45,6 +46,7 @@ nav li {
     background-color: #fcbc0c;
     padding: 10px;
     border: none;
+    font-family: 'Comic Neue';
 }
 
 .logo {
