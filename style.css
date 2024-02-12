@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
 
-body {
-    margin-left: 175px;
-    margin-right: 175px;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
 }
 
 .nav-container {
     display: grid;
     grid-template-columns: 165px auto auto auto;
+    margin-left: 175px;
+    margin-right: 175px;
+    margin-top: 20px;
 }
 
 .nav-grid-item {
@@ -27,15 +34,21 @@ nav ul {
     font-family: 'Comic Neue';
     font-weight: 700;
     font-size: 1pc;
+    align-items: center;
 }
 
 nav li {
     margin-right: 25px;
 }
 
+.button-li {
+    background-color: #fcbc0c;
+    padding: 10px;
+    border: none;
+}
+
 .logo {
     color: #fcbc0c;
     width:100px;
     height: 100px;
-    padding-top: 30px;
 }
