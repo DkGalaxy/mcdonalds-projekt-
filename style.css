@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
 
-nav ul{
-    
-    list-style-type: none;
-}
+    nav ul{
+        display: flex;
+    flex-direction: row;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
 
 .logo{
     color: #fcbc0c;
-    font-family: 
+    font-family: 'Comic Neue';
+    font-weight: 700;
+    font-size: 120px;
 
 }
