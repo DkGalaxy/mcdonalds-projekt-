@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
 
-<<<<<<< Updated upstream
 body {
     margin-left: 175px;
     margin-right: 175px;
@@ -39,15 +38,4 @@ nav li {
     width:100px;
     height: 100px;
     padding-top: 30px;
-=======
-nav ul{
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
-}
-
-.logo{
-    color: #fcbc0c;
-    font-family: 
->>>>>>> Stashed changes
 }
