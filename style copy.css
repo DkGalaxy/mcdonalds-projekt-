@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+
+    nav ul{
+        display: flex;
+    flex-direction: row;
+        list-style-type: none;
+        justify-content: space-evenly;
+        font-family: 'Comic Neue';
+        font-weight: 700;
+        font-size: 1pc;
+        margin: 175px;
+    
+    }
+
+.logo{
+    color: #fcbc0c;
+width:100px;
+height: 100px;
+padding-top: 30px;
+margin: 175px;
+
+}
+footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  /* Change to space-between */
+    margin: 175px;
+}
+
+.footer-title h2 {
+    margin-bottom: 10px;
+}
+.footer-title {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-text {
+    flex: 4;
+    margin: 0 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+    .midt{
+        height: 600px;
+    }
+footer li{
+    list-style: none;
+    padding-bottom: 15px;
+}
