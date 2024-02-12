@@ -91,3 +91,63 @@ h2 {
     justify-content: space-between;
 }
 
+/* drop down menu */
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 450px;
+    background: #ffffff;
+    margin-top: 560px;
+    /*overflow: hidden;*/
+    margin-left: -175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.1s;
+    box-shadow: 2px 2px 2px 2px rgba(0.08, 0.08, 0.08, 0.08);
+    border: 0.5px solid rgb(202, 200, 200);
+}
+
+.chevron {
+    transform: rotateX(0deg); /* Initial rotation angle */
+    transform-origin: center; /* Set the rotation origin to the top center */
+    transition: opacity 0.1s, transform 0.5s; /
+}
+
+.menu img {
+    width: 80%;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .menu {
+    height: 450px;
+    opacity: 1;
+}
+
+#check:checked ~ .chevron {
+    transform: rotateX(180deg);
+}
+
+#check:checked ~ .menu-container li:first-child { /*dette virker ikke??*/
+    font-weight: 700;
+}
+
+
+/*styler sådan at dropdwn tingen ligger ved siden af "vores menu" + mellemrum til "bestil"*/ 
+.nav-container .nav-grid-item ul li:nth-child(1) {
+    margin: 0px;
+    margin-right: 7px;
+    padding: 0px;
+}
+
+.menu-container label {
+    margin: 0;
+    margin-right: 22px;
+    padding: 0;
+}
+
