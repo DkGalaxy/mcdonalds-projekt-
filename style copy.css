@@ -1,55 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
 
-    nav ul{
-        display: flex;
-    flex-direction: row;
-        list-style-type: none;
-        justify-content: space-evenly;
-        font-family: 'Comic Neue';
-        font-weight: 700;
-        font-size: 1pc;
-        margin: 175px;
-    
-    }
 
-.logo{
-    color: #fcbc0c;
-width:100px;
-height: 100px;
-padding-top: 30px;
-margin: 175px;
-
+* {
+    margin: 0;
+    padding: 0;
 }
-footer {
-    padding: 20px;
+
+
+header {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: 165px auto auto auto;
+    margin-left: 175px;
+    margin-right: 175px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+
+.nav-grid-item {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 20px;
+    row-gap: 20px;
+}
+
+nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;  /* Change to space-between */
-    margin: 175px;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: 'Comic Neue';
+    font-size: 16px;
+    align-items: center;
 }
 
-.footer-title h2 {
-    margin-bottom: 10px;
+nav li {
+    margin-right: 25px;
+    margin-left: 7.5px;
 }
-.footer-title {
-    flex: 1;
-    margin: 0 10px;
+
+.li-fontsize {
+    font-size: 14px;
+}
+
+.button-li {
+    background-color: #fcbc0c;
     padding: 10px;
-    text-align: center;
+    border: none;
+    font-family: 'Comic Neue';
 }
 
-.footer-text {
-    flex: 4;
-    margin: 0 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: left;
+.logo {
+    color: #fcbc0c;
+    width:100px;
+    height: 100px;
 }
 
-    .midt{
-        height: 600px;
-    }
-footer li{
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-rows: 2;
+    margin-left: 175px;
+    margin-right: 175px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-grid-item li {
+    display: flex;
     list-style: none;
-    padding-bottom: 15px;
+    font-family: 'Comic Neue';
+    font-size: 16px;
+    padding-bottom: 7.5px;
+}
+
+.footer-grid-item {
+    display: flex;
+    justify-content: space-between;
 }
