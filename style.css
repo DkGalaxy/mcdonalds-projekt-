@@ -221,6 +221,7 @@ padding: 10px;
     font-size: 15px;
     padding-right: 25px;
     padding-top: 25px;
+    font-family: 'Comic Neue';
 }
 
 .nedrelogo{
@@ -233,4 +234,5 @@ padding: 10px;
 .copyright{
     margin-left: 2px;
     padding-top: 25px;
+    font-family: 'Comic Neue';
 }
