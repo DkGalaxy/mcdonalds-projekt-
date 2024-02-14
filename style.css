@@ -5,6 +5,11 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+
+a {
+    color: black;
 }
 
 
@@ -60,7 +65,7 @@ nav li {
 }
 
 /* menu mere viden underside*/
-.menu-container li:nth-child(5) {
+.vide-mere .menu-container li:nth-child(5) {
     font-weight: bold;
     
 }
