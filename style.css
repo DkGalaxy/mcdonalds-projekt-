@@ -128,6 +128,7 @@ h2 {
     transition: opacity 0.1s;
     box-shadow: 2px 2px 2px 2px rgba(0.08, 0.08, 0.08, 0.08);
     border: 0.5px solid rgb(202, 200, 200);
+    pointer-events: none;
 }
 
 .chevron {
