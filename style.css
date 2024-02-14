@@ -59,6 +59,19 @@ nav li {
     border-radius: 4px;
 }
 
+/* menu mere viden underside*/
+.menu-container li:nth-child(5) {
+    font-weight: bold;
+    
+}
+
+.menu-container li hr {
+    margin-bottom: -28px;
+    margin-top: 23px;
+    border: 2px solid #c20000;
+}
+/*stopper her*/
+
 .logo {
     color: #fcbc0c;
     width:100px;
@@ -95,6 +108,7 @@ h2 {
 
 /* drop down menu */
 .menu {
+    z-index: 3;
     position: absolute;
     width: 100%;
     height: 450px;
@@ -234,4 +248,82 @@ padding: 10px;
     margin-left: 2px;
     padding-top: 25px;
     font-family: 'Comic Neue';  
+}
+
+
+/*slideshow*/
+
+
+.img-slider {
+    position: relative;
+    width: 1000px;
+    height: 280px;
+    padding: 40px;
+    margin-left: 125px;
+    margin-right: 125px;
+}
+
+.img-slider .slide {
+    font-family: 'Comic Neue';
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide h2 {
+    font-size: 30px;
+}
+
+
+.img-slider .slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 1.3s;
+    transition-property: clip-path;
+}
+
+.img-slider .slide img {
+    z-index: 1;
+    width: 50%;
+}
+
+.img-slider .slide .info {
+    position: absolute;
+    margin-left: 560px;
+    margin-top: -230px;
+}
+
+.img-slider .slide button {
+    width: 150px;
+    height: 50px;
+    font-family: 'Comic Neue';
+    font-size: 15px;
+    background-color: #fcbc0c;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 27px;
+    border: none;
+}
+
+.img-slider .navigation {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    margin-left: 50px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn {
+    background:rgb(213, 213, 213);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.img-slider .navigation .btn.active {
+    background: #c20000;
 }
