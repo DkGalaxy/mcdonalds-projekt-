@@ -22,20 +22,23 @@ btns.forEach((btn, i) => {
 });
 
 //automatisk slide skift
-var repeat = function(activeClass) {
+var repeat = function() {
+    var slidesArray = Array.from(slides);
+    var btnsArray = Array.from(btns);
+
   var repeater = () => {
     setTimeout(function () {
-      slides[currentSlide].classList.remove('active');
-      btns[currentSlide].classList.remove('active');
+      slidesArray[currentSlide].classList.remove('active');
+      btnsArray[currentSlide].classList.remove('active');
 
-      if (currentSlide >= slides.length - 1) {
+      if (currentSlide >= slidesArray.length - 1) {
         currentSlide = 0; //reset to  first slide
       } else {
         currentSlide++; //increment to next slide
       }
 
-      slides[currentSlide].classList.add('active');
-      btns[currentSlide].classList.add('active');
+      slidesArray[currentSlide].classList.add('active');
+      btnsArray[currentSlide].classList.add('active');
       repeater();
     }, 9000);
   };

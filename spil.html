@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/LOGO.png">
     <script src="https://kit.fontawesome.com/3259b7cfe6.js" crossorigin="anonymous"></script>
-    <script src="slideshow.js" defer></script>
 </head>
-<body class="vide-mere">
+<body class="spil">
     <header>
         <nav class="nav-container">
             <div class="nav-grid-item">
@@ -40,80 +39,15 @@
                     <li>Få mere i app'en</li>
                     <li>Bestil nu</li>
                     <li>Find din McDonald's</li>
-                    <li>Vil du vide mere?
+                    <li><a href="vide-mere.html">Vil du vide mere?</a></li>
+                    <li>Spil
                         <hr>
                     </li>
-                    <li><a href="spil.html">Spil</a></li>
                     <li>Kundeservice</li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main>
-        <div class="img-slider">
-            <div class="slide active">
-                <img src="images/nyheder_pa_menuen.jpeg" alt="Nyheder pa menuen">
-                <div class="info">
-                    <h2>Nyheder på menuen</h2>
-                    <p>Her kan du læse om alle vores aktuelle produktkampagner. </p>
-                    <button>Læs mere</button>
-                </div>
-            </div>
-     
-            <div class="slide">
-                <img src="images/baristakaffe.jpeg" alt="Baristakaffe">
-                <div class="info">
-                    <h2>Vores baristaer brænder for at lave den perfekte kaffe til dig</h2>
-                    <p>Så er det bare op til dig om den perfekte kaffe er den stærke espresso eller cappuccinoen med masser af mælkeskum. </p>
-                    <button>Læs mere</button>
-                </div>
-            </div>
-
-            <div class="slide">
-                <img src="images/billede_3_til_vide_mere.jpeg" alt="Mere på menuen, end du lige ser">
-                <div class="info">
-                    <h2>Mere på menuen, end du lige ser</h2>
-                    <p>Vi serverer velsmagende måltider, gode øjeblikke for alle vores gæster og vi handler ansvarligt som virksomhed. Det betyder, at vi gør en indsats, når det kommer til kvalitet, madspild og genanvendelse, uddannelse, henkastet affald og meget mere. </p>
-                    <button>Læs mere</button>
-                </div>
-            </div>
-
-            <div class="slide">
-                <img src="images/billede_4_pa_vide_mere.jpeg" alt="Arbejde på McD">
-                <div class="info">
-                    <h2>Skal du arbejde på McDonald's?</h2>
-                    <p>McDonald’s er ikke bare en arbejdsplads, men en mulighed for at blive en del af et stærkt fællesskab. Har du ambitioner, så tør vi godt love, at din udvikling ikke kommer til at stå stille! </p>
-                    <button>Læs mere</button>
-                </div>
-            </div>
-
-            <div class="slide">
-                <img src="images/billede_5_pa_vide_mere.jpeg" alt="Familie">
-                <div class="info">
-                    <h2>Tid med familien er den vigtigste tid</h2>
-                    <p>Hos McDonald’s er der masser af muligheder for gode øjeblikke med familien. </p>
-                    <button>Læs mere</button>
-                </div>
-            </div>
-
-            <div class="slide">
-                <img src="images/ronald_mcdonald_brnefond.jpeg" alt="Ronald McDonald børnefond">
-                <div class="info">
-                    <h2>Ronald McDonald BørneFond</h2>
-                    <p>Når et barn bliver sygt, bliver hele familien ramt og er i en særligt sårbar og uvant situation. Først og fremmest har familien behov for at være sammen, og det kan også være en stor hjælp for dem at være sammen med andre familier i huset. </p>
-                    <button>Læs mere</button>
-                </div>
-            </div>
-            <div class="navigation">
-                <div class="btn active"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
-            </div>
-        </div>
-    </main>
     
 
 
@@ -189,8 +123,13 @@
                 <p class="copyright"> ©2023 MucDunald's. All Rights Reserved</p> 
             </div>
         </div>
-    </footer>
 
-    '¨¨'
+    </footer>
+    <div id="cookie-alert" class="cookie-alert">
+        <P>this webside use cookies because we need your data to make a online profile of you</P>
+        <button id="accept-cookie" class="accept-cookie">Accept</button>
+    </div>
+    <script src="cookiebot.js"></script>
+
 </body>
 </html>
