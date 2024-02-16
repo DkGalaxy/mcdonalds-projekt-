@@ -2,9 +2,9 @@ var myQuestions = [
 	{
 		question: "Hvor mange burgere blev der solgt i 2010?",
 		answers: {
-			a: '2 Millioner ',
-			b: '5 Millioner ',
-			c: '58 Millioner '
+			a: '2 millioner ',
+			b: '5 millioner ',
+			c: '58 millioner '
 		},
 		correctAnswer: 'c',
         image: 'images/forside1.jpeg', // Add the image property
@@ -15,9 +15,9 @@ var myQuestions = [
 	{
 		question: "Hvem er klovnen på billedet?",
 		answers: {
-			a: 'Ronald mcdonald ',
-			b: 'Pjævert ',
-			c: 'Mark lefever '
+			a: 'Runald MucDonald ',
+			b: 'Pjerrot ',
+			c: 'Mark Le Fêvre '
 		},
 		correctAnswer: 'a',
 		image: 'images/ronald mcdunald.jpeg', // Add the image property
