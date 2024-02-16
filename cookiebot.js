@@ -29,12 +29,28 @@ document.addEventListener("DOMContentLoaded", function() {
       alert("Cookies have been declined.");
 
     }
-    function loopDeclineCookies() {
-      var confirmed = confirm("Are you sure you want to decline cookies?");
-      if (confirmed) {
-        declineCookie();
+    function loopDeclineCookies() 
+    {
+      var declinemessages =
+      [
+        "are sure you want to decline cookies",
+        "are you absolutely certain you dont want cookies?",
+        "declining cookies means missing out on a personalized content, are u sure?"
+      ];
+      var confirmed = false;
+      for (var i = 0; i< declinemessages.length; i++)
+      {
+        confirmed = confirm(declinemessages[i]);
+        if (confirmed)
+        {
+          declineCookie();
+          break;
+        }
+
       }
+       
     }
+    
 
     
   
