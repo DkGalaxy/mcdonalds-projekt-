@@ -109,7 +109,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 	// when user clicks submit, show results
 	submitButton.onclick = function(){
 		showResults(questions, quizContainer, resultsContainer);
-        alert()
+       
 	}
 }
 
