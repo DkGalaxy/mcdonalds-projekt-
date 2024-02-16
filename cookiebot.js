@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var expiryDate = new Date();
       expiryDate.setTime(expiryDate.getTime() + (30 * 24 * 60 * 60 * 1000));
       document.cookie = "cookie_accepted=true; expires=" + expiryDate.toUTCString() + "; path=/";
-  
+  alert("cookie has been acceptet thank u for letting us use your data")
       // Hide the cookie alert
       cookieAlert.style.display = 'none';
     };
