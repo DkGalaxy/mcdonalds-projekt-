@@ -1,3 +1,5 @@
+//Lykkehjul
+
 let spinning = false;
 
 const wheelSections = [
