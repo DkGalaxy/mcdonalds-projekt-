@@ -22,13 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
       // Hide the cookie alert
       cookieAlert.style.display = 'none';
     };
-    function declineCookie()
-    {
-      document.cookie = "cookie_accepted=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-      cookieAlert.style.display = 'none';
-      alert("Cookies have been declined.");
-
-    }
     function loopDeclineCookies() 
     {
       var declinemessages =
@@ -37,18 +30,29 @@ document.addEventListener("DOMContentLoaded", function() {
         "are you absolutely certain you dont want cookies?",
         "declining cookies means missing out on a personalized content, are u sure?"
       ];
-      var confirmed = false;
+      
+      var confirmed = true;
+      while (confirmed)
+  {
       for (var i = 0; i< declinemessages.length; i++)
       {
         confirmed = confirm(declinemessages[i]);
-        if (confirmed)
+        if (!confirmed)
         {
           declineCookie();
-          break;
+       break;
         }
-
+        
       }
-       
+      
+    }
+  }
+    function declineCookie()
+    {
+      document.cookie = "cookie_accepted=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      cookieAlert.style.display = 'cookie';
+      alert("Cookies have been declined not.");
+
     }
     
 
